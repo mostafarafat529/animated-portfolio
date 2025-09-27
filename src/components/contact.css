@@ -1,0 +1,109 @@
+
+:root{
+    --main-color:rgb(14, 204, 204);
+    --bg-color :#1f242d ;
+    --second-bg-color :#323946 ;
+    --text-color:#fff ;
+    --main-transition:.8s;
+}
+
+/* start contact  */
+
+.six-section {
+    background-color: var(--second-bg-color);
+    min-height: 100vh;
+    padding: 100px 0;
+    border-top: 1px solid #fff;
+}
+
+.six-section .contact {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    max-width:600px;
+    min-height: 300px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid var(--main-color);
+    border-radius: 2rem;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.six-section .contact h1 {
+    color: var(--main-color);
+    font-weight: bold;
+    margin: 10px 0;
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+
+.six-section .contact p {
+    color: #ffffffb5;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.six-section .contact form{
+    width: 600px;
+    padding:20px 30px ;
+}
+.six-section .contact .feild {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.six-section .contact .feild label {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #ccc;
+    text-transform: capitalize;
+}
+
+.six-section .contact .feild input,
+.six-section .contact .feild textarea {
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+    border-radius: 8px;
+    padding: 10px;
+    color: var(--text-color);
+    font-size: 14px;
+    outline: none;
+    resize: none;
+    width: 100%;
+}
+
+.six-section .contact .feild textarea {
+    height: 150px;
+}
+.six-section .contact button {
+    margin-top: 10px;
+    padding: 5px 20px;
+    border: none;
+    background-color: var(--main-color);
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: 100%;
+    font-size: 25px;
+}
+
+.six-section .contact button:hover {
+    background-color: #fff;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+@media (max-width: 760px) {
+    .six-section .contact form{
+        width: 400px;
+    }
+  
+    .six-section .contact .feild input,
+    .six-section .contact .feild textarea {
+        width: 100%;
+    }
+  }
+
+/* end contact  */

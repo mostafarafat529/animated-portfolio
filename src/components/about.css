@@ -1,0 +1,72 @@
+:root{
+    --main-color:rgb(14, 204, 204);
+}
+
+.section-about{
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+}
+.section-about .container{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    color: #fff;
+}
+
+.section-about .right h1{
+    font-size: 3.5rem;
+    color:var(--main-color) ;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.section-about .right p{
+    color: #aca9a9;
+    line-height: 1.5;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.section-about .right button{
+    border-radius: 30px;
+    padding: 18px 30px;
+    border: none;
+    outline: none;
+    margin: 20px;
+    font-size: 22px;
+    transition: .5s;
+}
+.section-about .right button:first-of-type{
+    background-color: var(--main-color);
+    
+}
+.section-about .right button:first-of-type:hover{
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+    color: #fff;
+}
+.section-about .right .primaryBtn{
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+    color: #fff;
+}
+
+
+@media (max-width:660px) {
+    .section-about .container{
+        flex-direction: column;
+    }
+    .section-about .container .image img{
+        display: none;
+    }
+    .section-about .right h1{
+        font-size: 2.5rem;
+    }
+    .section-about .right p{
+        font-size: 16px;
+    }
+    
+}

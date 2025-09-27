@@ -1,0 +1,58 @@
+:root{
+    --main-color:rgb(14, 204, 204);
+}
+
+.section-portfolio{
+    background-color: #333;
+    min-height: 100vh;
+    padding: 100px;
+}
+.section-portfolio h1{
+        color:var(--main-color) ;
+    margin: 40px 0;
+    font-size: 3.5rem;
+font-weight: bold;
+text-align: center;
+}
+.section-portfolio .content-portfolio .btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.section-portfolio .content-portfolio .btns button{
+    padding: 15px 30px ;
+    border-radius: 25px;
+    color: #fff;
+    background-color: transparent;
+    font-size: 1.5rem;
+    border: 2px solid var(--main-color);
+    outline: none;
+    transition: .6s;
+}
+.section-portfolio .content-portfolio .btns button:hover{
+background-color: var(--main-color);
+color: #000;
+}
+
+.section-portfolio .images .img img{
+    border-radius: 20px;
+    width: 400px;
+    height: 320px;
+}
+.section-portfolio .images{
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(350px ,1fr));
+    gap: 2rem;
+}
+
+
+@media (max-width:660px){
+    .section-portfolio .images .img img{
+        width: 300px;
+        height: 250px;
+    }
+    
+}

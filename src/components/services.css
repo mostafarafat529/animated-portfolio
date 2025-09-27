@@ -1,0 +1,36 @@
+:root{
+    --main-color:rgb(14, 204, 204);
+}
+.section-services{
+    padding: 50px;
+    background-color: #333;
+color: #fff;
+}
+.section-services h1{
+    color:var(--main-color) ;
+    margin: 40px 0;
+    font-size: 3.5rem;
+font-weight: bold;
+text-align: center;
+}
+.section-services .content-services{
+        display: grid;
+        grid-template-columns: repeat(auto-fill , minmax(400px,1fr));
+        gap: 2rem;
+    }
+    .section-services .content-services .box{
+        background-color: #000;
+        padding: 30px;
+        border-radius: 16px;
+    }
+    .section-services .content-services .box span{
+        color: var(--main-color);
+        font-size: 3rem;
+    }
+    .section-services .content-services .box h2{
+        margin: 30px 0;
+    }
+    .section-services .content-services .box p{
+color: #999;
+font-size: 18px;
+    }

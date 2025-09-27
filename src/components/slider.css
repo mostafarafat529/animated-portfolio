@@ -1,0 +1,22 @@
+:root{
+    --main-color:rgb(14, 204, 204);
+}
+.slider-section{
+    background-color: #333;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider-section .content{
+    width: 90%;
+    /* border: 1px solid #555; */
+    padding: 20px;
+    transition: .5s;
+    text-align: center;
+}
+span{
+    cursor: pointer;
+    font-size: 3rem;
+color: var(--main-color);
+}
